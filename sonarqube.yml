@@ -17,5 +17,6 @@ jobs:
       -name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@master
       env:
-        SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
-        SONAR_HOST_URL: ${{secrets.SONAR_HOST_URL}}
+        SONAR_TOKEN: ${{sqp_ac9f923b127681b2fd152ed8afb2e66d857a4b07}}
+        SONAR_HOST_URL: ${{secrets.sonar.core.serverBaseURL
+}}
